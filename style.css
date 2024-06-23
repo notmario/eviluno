@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend';
+  image-rendering: pixelated;
+}
+
+aside {
+  background-color: #ccb4ff;
+  min-height: 100vh;
+  height: 100%;
+  width: 12rem;
+  position: fixed;
+  border-right: 1px solid #b399eb;
+
+}
+
+@media screen and (max-width: 62rem) {
+  aside {
+    display: none;
+  }
+  main {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+aside img {
+  width: 142px;
+  position: relative;
+  margin: 2rem auto;
+  /* top: 2rem; */
+  display: block;
+  transform: rotate(-10deg) scaleX(1);
+}
+
+main {
+  width: calc(100% - 12rem);
+  margin-left: 12rem;
+  padding: 1rem;
+  min-height: 100vh;
+  background-color: #f4efff;
+  /* text-align: center; */
+}
+
+main .img-bottom-border {
+  border-bottom: 1px solid #ccb4ff;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+p {
+  max-width: 50rem;
+  margin-bottom: 1rem;
+  /* margin: 0 auto; */
+}
+
+header, footer {
+  width: calc(100% - 12rem);
+  margin-left: 12rem;
+  padding: 1rem;
+  background-color: #e1d6f7;
+  border-top: 1px solid #b399eb;
+  border-bottom: 1px solid #b399eb;
+}
