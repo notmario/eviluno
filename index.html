@@ -50,9 +50,182 @@
     </div>
     <p>
       Below is a list of all unique card types in the game, ignoring colour. <br>
-      All <b>wild</b> cards can be played at any time on any pile. When played, choose a valid colour. The card's colour becomes the chosen colour. <br>
-      When a card tells a player to draw cards (i.e. "the next player draws two cards"), their next turn is skipped if they are the next player, unless otherwise specified.
+      All <i>wild</i> cards can be played at any time on any pile. When played, choose a valid colour. The card's colour becomes the chosen colour. <br>
+      When a card tells a player to draw cards (i.e. "the next player draws two cards"), their next turn is skipped if they are the next player, unless otherwise specified. <br>
+      Additionally, all <i>stackable</i> cards may be played on top of all other <i>stackable</i>. A card is <i>stackable</i> if it features an arrow in the top right / bottom left corner. Cards are only drawn by the first player to not continue the stack.
     </p>
+    <div class="cards">
+      <div class="card">
+        <img src="cards/10@n.png" alt="colourless 10">
+        <div class="card-right">
+          <h2><span>2x col</span> Numbers</h2>
+          <p>0 and 10 only have one copy per colour.</p>
+          <p>There are also colourless numbers (depicted). <br> These can only be matched by their number, and not by colour.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/reverse@p.png" alt="purple reverse card">
+        <div class="card-right">
+          <h2><span>2x col</span> Reverse</h2>
+          <p>Reverses the direction of play when played.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/skip@p.png" alt="purple skip">
+        <div class="card-right">
+          <h2><span>2x col</span> Skip</h2>
+          <p>The next player's turn is skipped.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/draw two@p.png" alt="purple draw two">
+        <div class="card-right">
+          <h2><span>2x col</span> Draw Two</h2>
+          <p><i>Stackable</i>. The next player draws two cards.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/wild@w.png" alt="wild">
+        <div class="card-right">
+          <h2><span>16x</span> Wild</h2>
+          <p><i>Wild</i>. Has no other effects.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/wild draw four@w.png" alt="wild draw four">
+        <div class="card-right">
+          <h2><span>4x</span> Wild Draw Four</h2>
+          <p><i>Stackable</i>. <i>Wild</i>. The next player draws four cards.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/all draw one@p.png" alt="purple all draw one">
+        <div class="card-right">
+          <h2><span>1x col</span> All Draw One</h2>
+          <p>All other players draw one card. Their turns are not skipped.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/wild all draw two@w.png" alt="wild all draw two">
+        <div class="card-right">
+          <h2><span>2x</span> Wild All Draw 2</h2>
+          <p><i>Wild</i>. All other players draw one card. Their turns are not skipped.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/hash@p.png" alt="purple #">
+        <div class="card-right">
+          <h2><span>3x col</span> #</h2>
+          <p>When played, you may choose this card's number.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/wild x2@w.png" alt="wild times two">
+        <div class="card-right">
+          <h2><span>2x</span> Wild x2</h2>
+          <p><i>Stackable</i>. <i>Wild</i>. The next player draws cards equal to the number of cards they have in hand.</p>
+          <p>When stacked, instead doubles the current stack.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/swap hands@w.png" alt="wild swap hands">
+        <div class="card-right">
+          <h2><span>2x</span> Swap Hands</h2>
+          <p><i>Wild</i>. When played, choose a target player. You and that player swap your hands.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/targeted draw two@p.png" alt="purple targeted draw two">
+        <div class="card-right">
+          <h2><span>2x col</span> Targeted Draw Two</h2>
+          <p><i>Stackable</i>. When played, choose a target player. That player draws two cards. If they stack on this, the turn order jumps to them.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/shuffle hands@w.png" alt="wild shuffle hands">
+        <div class="card-right">
+          <h2><span>2x</span> Shuffle Hands</h2>
+          <p><i>Wild</i>. When played, shuffle all player's hands together and deal them out evenly, starting with you.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/wild draw eight@w.png" alt="wild draw eight">
+        <div class="card-right">
+          <h2><span>2x</span> Wild Draw Eight</h2>
+          <p><i>Stackable</i>. <i>Wild</i>. The next player draws eight cards.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/wild =9@w.png" alt="wild set to 9">
+        <div class="card-right">
+          <h2><span>2x</span> Wild =9</h2>
+          <p><i>Wild</i>. When played, target either you or the next player. That player draws or discards to exactly nine cards.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/general store@w.png" alt="wild general store">
+        <div class="card-right">
+          <h2><span>2x</span> General Store</h2>
+          <p><i>Wild</i>. When played, flip over one card for each player. Starting with you, each player picks one of those cards to draw.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/minus two@p.png" alt="purple discard two">
+        <div class="card-right">
+          <h2><span>1x col</span> Discard Two</h2>
+          <p>When played, you must choose two cards to discard.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/plus one@p.png" alt="purple draw one">
+        <div class="card-right">
+          <h2><span>1x col</span> Draw One</h2>
+          <p><i>Stackable</i>. The next player draws a card.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/wild draw to match@w.png" alt="wild draw to match">
+        <div class="card-right">
+          <h2><span>4x</span> Wild Draw to Match</h2>
+          <p><i>Wild</i>. The next player draws cards until they draw a card of the chosen colour, or they have drawn eight cards.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/wild divide by 2@w.png" alt="wild divide by 2">
+        <div class="card-right">
+          <h2><span>2x</span> Wild Divide By Two</h2>
+          <p><i>Wild</i>. When played, discard half of your hand, rounding up.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/war@w.png" alt="wild war">
+        <div class="card-right">
+          <h2><span>4x</span> WAR</h2>
+          <p><i>Wild</i>. When played, each player discards a card. The players who discard the lowest numbered cards (cards without numbers count as 0) draw the cards split between them.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/replay@p.png" alt="purple replay">
+        <div class="card-right">
+          <h2><span>1x col</span> Replay</h2>
+          <p>When played, skip all other players.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/half orange@p.png" alt="purple / orange">
+        <div class="card-right">
+          <h2><span>1x 2cols</span> Split Colour</h2>
+          <p>Has no number, but two colours instead.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cards/draw d6@p.png" alt="purple draw d6">
+        <div class="card-right">
+          <h2><span>1x col</span> Draw D6</h2>
+          <p><i>Stackable</i>. Roll a D6. The next player draws that many cards.</p>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
     game made by not mario. <br>
