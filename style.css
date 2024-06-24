@@ -41,6 +41,9 @@ main .img-bottom-border {
   margin: 0.5rem 0;
   width: 100%;
 }
+.img-bottom-border img {
+  max-width: calc(100vw - 2rem);
+}
 
 p {
   max-width: 50rem;
