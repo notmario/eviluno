@@ -45,6 +45,10 @@ main .img-bottom-border {
   max-width: calc(100vw - 2rem);
 }
 
+header img {
+  max-width: calc(100vw - 2rem);
+}
+
 p {
   max-width: 50rem;
   margin-bottom: 1rem;
